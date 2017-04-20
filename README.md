@@ -1,4 +1,7 @@
-# api documentation for  [ember-metrics (v0.10.0)](https://github.com/poteto/ember-metrics)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-metrics.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-metrics) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-metrics.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-metrics)
+# npmdoc-ember-metrics
+
+#### api documentation for  [ember-metrics (v0.10.0)](https://github.com/poteto/ember-metrics)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-metrics.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-metrics) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-metrics.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-metrics)
+
 #### Send data to multiple analytics integrations without re-implementing new API
 
 [![NPM](https://nodei.co/npm/ember-metrics.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ember-metrics)
@@ -18,12 +21,25 @@
 ```json
 
 {
-    "author": {
-        "name": "Lauren Tan"
+    "name": "ember-metrics",
+    "version": "0.10.0",
+    "description": "Send data to multiple analytics integrations without re-implementing new API",
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
     },
-    "bugs": {
-        "url": "https://github.com/poteto/ember-metrics/issues"
+    "scripts": {
+        "start": "ember server",
+        "build": "ember build",
+        "test": "ember try:each"
     },
+    "repository": "https://github.com/poteto/ember-metrics",
+    "bugs": "https://github.com/poteto/ember-metrics/issues",
+    "homepage": "https://github.com/poteto/ember-metrics",
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "author": "Lauren Tan",
     "contributors": [
         {
             "name": "Michael Dupuis Jr"
@@ -32,13 +48,7 @@
             "name": "Mike North"
         }
     ],
-    "dependencies": {
-        "broccoli-funnel": "^1.0.1",
-        "ember-cli-babel": "^5.1.6",
-        "ember-getowner-polyfill": "^1.0.0",
-        "ember-runtime-enumerable-includes-polyfill": "^1.0.1"
-    },
-    "description": "Send data to multiple analytics integrations without re-implementing new API",
+    "license": "MIT",
     "devDependencies": {
         "broccoli-asset-rev": "^2.4.2",
         "ember-ajax": "^2.0.1",
@@ -61,22 +71,6 @@
         "ember-sinon": "0.3.0",
         "loader.js": "^4.0.1"
     },
-    "directories": {
-        "doc": "doc",
-        "test": "tests"
-    },
-    "dist": {
-        "shasum": "b3400aa8f001af5f39691266bea1d10b943c3cf6",
-        "tarball": "https://registry.npmjs.org/ember-metrics/-/ember-metrics-0.10.0.tgz"
-    },
-    "ember-addon": {
-        "configPath": "tests/dummy/config"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "gitHead": "ede0020bb01f059723396b74f64a28e63fd44cc8",
-    "homepage": "https://github.com/poteto/ember-metrics",
     "keywords": [
         "ember-addon",
         "metrics",
@@ -90,24 +84,15 @@
         "intercom",
         "facebook-pixel"
     ],
-    "license": "MIT",
-    "maintainers": [
-        {
-            "name": "sugarpirate"
-        }
-    ],
-    "name": "ember-metrics",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/poteto/ember-metrics.git"
+    "dependencies": {
+        "broccoli-funnel": "^1.0.1",
+        "ember-cli-babel": "^5.1.6",
+        "ember-getowner-polyfill": "^1.0.0",
+        "ember-runtime-enumerable-includes-polyfill": "^1.0.1"
     },
-    "scripts": {
-        "build": "ember build",
-        "start": "ember server",
-        "test": "ember try:each"
-    },
-    "version": "0.10.0"
+    "ember-addon": {
+        "configPath": "tests/dummy/config"
+    }
 }
 ```
 
